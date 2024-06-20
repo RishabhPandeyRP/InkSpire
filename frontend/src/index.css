@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        margin-right: 5px;
+          display : block;
+          border-radius: 9px;
+          width: 10px;
+          /* border : solid black 1px */
+      }
+      ::-webkit-scrollbar-thumb {
+        
+        background: rgb(192, 192, 192); 
+        border-radius: 10px;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      /* .no-scrollbar {
+          -ms-overflow-style: none;  IE and Edge
+          scrollbar-width: none;  Firefox
+    } */
+  }
