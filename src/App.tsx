@@ -97,7 +97,7 @@ function App() {
     validation()
     // fetchData()
     setLoadingStatus(false);
-  }, [loginStatus]);
+  }, []);
 
   return (
     <div className=" overflow-hidden m-0">

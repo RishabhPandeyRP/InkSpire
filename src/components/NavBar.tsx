@@ -36,8 +36,8 @@ export const NavBar = () => {
                 }
             })
             const data = await response.json();
-            console.log("from modaltitle ", data.response);
-            console.log("from modaltitle ", data.userid);
+            console.log("from modalprfilepic ", data.response);
+            console.log("from modalprfilepic ", data.userid);
 
             const response2 = await fetch("http://127.0.0.1:8787/api/v1/blog/image/get", {
 
@@ -54,7 +54,7 @@ export const NavBar = () => {
                 }
             })
             const data2 = await response2.json();
-            console.log("from nav imageurl div ", data2.imageFile);
+            console.log("from modalprfilepic imageurl div ", data2.imageFile);
             setShowPic(data2.imageFile.imageUrl);
             
         } catch (error) {
@@ -153,7 +153,7 @@ export const NavBar = () => {
                     {
                         loginStatus && userNameBox ? <div className=" w-fit h-[230px]  rounded-2xl bg-black/70 backdrop-blur-md flex-col px-5 fixed z-10 right-3 border border-gray-500  shadow-sm shadow-gray-600">
                             
-                            {showPic ? <img src={showPic} alt="" className="w-[35%] h-[35%] mx-auto mt-[5%] cursor-pointer rounded-full object-contain" onClick={()=>{setProfileModal(true)}} />:<img src={userIcon} alt="" className="w-[35%] h-[35%] mx-auto mt-[5%] cursor-pointer " onClick={()=>{setProfileModal(true)}} />}
+                            {showPic ? <img src={showPic} alt="" className="w-[70px] h-[70px] mx-auto mt-[5%] cursor-pointer rounded-full object-contain" onClick={()=>{setProfileModal(true)}} />:<img src={userIcon} alt="" className="w-[35%] h-[35%] mx-auto mt-[5%] cursor-pointer " onClick={()=>{setProfileModal(true)}} />}
 
                             {showProfileModal && <ModalProfilepic closeProfileModal={closeProfileModal}></ModalProfilepic>}
 

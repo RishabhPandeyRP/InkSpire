@@ -112,6 +112,7 @@ const ModalProfilepic = ({ closeProfileModal }) => {
             // console.log("type of file", profileImage.placeholder);
             setUploadStatus(false);
             closeProfileModal();
+            toast.success("Profile pic changed successfully , it will show in few moments");
 
         } catch (error) {
 
@@ -131,7 +132,7 @@ const ModalProfilepic = ({ closeProfileModal }) => {
     }
 
     return (
-        <div className="w-[100vw] h-[100vh] bg-black/80 backdrop-blur-md absolute -top-[10%] -left-[668%] flex justify-center" onClick={closeProfileModal}>
+        <div className="w-[100vw] h-[100vh] bg-black/80 backdrop-blur-md fixed -top-[5%] -left-[621%] flex justify-center" onClick={closeProfileModal}>
 
             <div className="w-fit h-fit border border-white bg-white rounded-lg px-9 py-5 mt-[12%] " onClick={(event) => { event.stopPropagation() }}>
 

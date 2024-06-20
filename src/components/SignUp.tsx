@@ -133,7 +133,7 @@ export default function SignUp() {
 
                         
 
-                        <div className="flex-col ml-10 mt-5 border border-green-300">
+                        <div className="flex-col ml-10 mt-5  border-green-300">
                             <p className="text-gray-500 text-md">Full name </p>
 
                             <input type="text" className=" rounded-md bg-white/10 border border-gray-500 my-1 w-[70%] h-[40px] pl-3 text-white" placeholder="Enter your full name here" value={userName} onChange={nameHandler} />
